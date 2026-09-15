@@ -218,14 +218,62 @@ a {
   padding: 0;
 }
 
-.tags li {
-  background: var(--tag-bg);
-  color: var(--tag-text);
+.tool-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(var(--tool-rgb), 0.1);
+  color: var(--tool-color);
+  border: 1px solid rgba(var(--tool-rgb), 0.22);
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.01em;
-  padding: 0.28rem 0.6rem;
+  padding: 0.28rem 0.55rem 0.28rem 0.35rem;
   border-radius: 999px;
+  line-height: 1;
+}
+
+.tool-tag-muted {
+  background: transparent;
+  color: var(--faint);
+  border-color: var(--line);
+}
+
+.tool-tag-muted {
+  --tool-color: var(--faint);
+}
+
+.tool-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.05rem;
+  height: 1.05rem;
+  border-radius: 999px;
+  background: rgba(var(--tool-rgb), 0.16);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.tool-tag-muted .tool-mark {
+  background: var(--tag-bg);
+  color: var(--faint);
+}
+
+.tool-mark img {
+  width: 0.7rem;
+  height: 0.7rem;
+  display: block;
+}
+
+.tool-mark-letter {
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: var(--tool-color);
+}
+
+.tool-label {
+  white-space: nowrap;
 }
 
 .tools-wrap {
@@ -249,11 +297,6 @@ a {
   color: var(--faint);
 }
 
-.tags-muted li {
-  background: transparent;
-  color: var(--faint);
-  border: 1px solid var(--line);
-}
 
 /* Carousel */
 .carousel {

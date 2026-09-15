@@ -160,6 +160,94 @@
     });
   };
 
+
+  var TOOL_BRANDS = {
+    "Claude Code": { color: "#D97757", icon: "anthropic", letter: "C" },
+    "Claude": { color: "#D97757", icon: "anthropic", letter: "C" },
+    "Railway": { color: "#0B0D0E", icon: "railway", letter: "R" },
+    "HubSpot": { color: "#FF7A59", icon: "hubspot", letter: "H" },
+    "Cognism": { color: "#5B4DFF", icon: null, letter: "C" },
+    "Base44": { color: "#3B82F6", icon: null, letter: "B" },
+    "Gong": { color: "#DE35FF", icon: null, letter: "G" },
+    "Lovable": { color: "#FF6B8A", icon: null, letter: "L" },
+    "Vercel": { color: "#000000", icon: "vercel", letter: "V" },
+    "Supabase": { color: "#3ECF8E", icon: "supabase", letter: "S" },
+    "GitHub": { color: "#181717", icon: "github", letter: "G" },
+    "Grok Bot": { color: "#1A1A1A", icon: null, letter: "G" },
+    "Slack": { color: "#4A154B", icon: "slack", letter: "S" },
+    "Clay": { color: "#E8A317", icon: null, letter: "C" },
+    "CRM": { color: "#64748B", icon: null, letter: "C" },
+    "HTML/CSS/JS": { color: "#E34F26", icon: "html5", letter: "H" },
+    "Automation": { color: "#0EA5E9", icon: null, letter: "A" },
+    "Web app": { color: "#6366F1", icon: null, letter: "W" },
+    "OSHA data": { color: "#B45309", icon: null, letter: "O" },
+    "Web monitoring": { color: "#0284C7", icon: null, letter: "W" },
+    "Web research": { color: "#0284C7", icon: null, letter: "W" },
+    "Instagram": { color: "#E4405F", icon: "instagram", letter: "I" },
+    "TTS": { color: "#8B5CF6", icon: null, letter: "T" },
+    "OpenAI": { color: "#10A37F", icon: "openai", letter: "O" },
+    "Cursor": { color: "#000000", icon: null, letter: "C" },
+    "Playwright": { color: "#2EAD33", icon: "playwright", letter: "P" },
+    "Figma": { color: "#F24E1E", icon: "figma", letter: "F" },
+    "Python": { color: "#3776AB", icon: "python", letter: "P" },
+    "FastAPI": { color: "#009688", icon: "fastapi", letter: "F" },
+    "Notion": { color: "#000000", icon: "notion", letter: "N" },
+    "ChatGPT": { color: "#10A37F", icon: "openai", letter: "C" },
+    "Apps Script": { color: "#4285F4", icon: "googlescript", letter: "A" },
+    "Airtable": { color: "#18BFFF", icon: "airtable", letter: "A" }
+  };
+
+  function hexToRgb(hex) {
+    var h = hex.replace("#", "");
+    if (h.length === 3) h = h[0]+h[0]+h[1]+h[1]+h[2]+h[2];
+    return {
+      r: parseInt(h.slice(0, 2), 16),
+      g: parseInt(h.slice(2, 4), 16),
+      b: parseInt(h.slice(4, 6), 16)
+    };
+  }
+
+  function toolBrand(name) {
+    return TOOL_BRANDS[name] || { color: "#5a5a5a", icon: null, letter: (name || "?").charAt(0).toUpperCase() };
+  }
+
+  function renderToolTag(name, muted) {
+    var brand = toolBrand(name);
+    var li = document.createElement("li");
+    li.className = "tool-tag" + (muted ? " tool-tag-muted" : "");
+    var rgb = hexToRgb(brand.color);
+    li.style.setProperty("--tool-color", brand.color);
+    li.style.setProperty("--tool-rgb", rgb.r + ", " + rgb.g + ", " + rgb.b);
+
+    var mark = document.createElement("span");
+    mark.className = "tool-mark";
+    if (brand.icon && !muted) {
+      var img = document.createElement("img");
+      img.src = "https://cdn.simpleicons.org/" + brand.icon + "/" + brand.color.replace("#", "");
+      img.alt = "";
+      img.width = 12;
+      img.height = 12;
+      img.loading = "lazy";
+      img.referrerPolicy = "no-referrer";
+      img.onerror = function () {
+        mark.textContent = brand.letter;
+        mark.classList.add("tool-mark-letter");
+      };
+      mark.appendChild(img);
+    } else {
+      mark.textContent = brand.letter;
+      mark.classList.add("tool-mark-letter");
+    }
+
+    var label = document.createElement("span");
+    label.className = "tool-label";
+    label.textContent = name;
+
+    li.appendChild(mark);
+    li.appendChild(label);
+    return li;
+  }
+
   function renderProject(project) {
     var article = el("article", "project");
     article.id = project.id;
@@ -176,16 +264,16 @@
     var toolsWrap = el("div", "tools-wrap");
     var tags = el("ul", "tags");
     (project.tools || []).forEach(function (tool) {
-      tags.appendChild(el("li", "", { text: tool }));
+      tags.appendChild(renderToolTag(tool, false));
     });
     toolsWrap.appendChild(tags);
 
     if (project.toolsFirstPass && project.toolsFirstPass.length) {
       var firstPass = el("div", "tools-first-pass");
       firstPass.appendChild(el("span", "tools-label", { text: "First pass" }));
-      var tagsAlt = el("ul", "tags tags-muted");
+      var tagsAlt = el("ul", "tags");
       project.toolsFirstPass.forEach(function (tool) {
-        tagsAlt.appendChild(el("li", "", { text: tool }));
+        tagsAlt.appendChild(renderToolTag(tool, true));
       });
       firstPass.appendChild(tagsAlt);
       toolsWrap.appendChild(firstPass);
