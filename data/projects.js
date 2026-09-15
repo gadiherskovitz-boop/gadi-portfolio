@@ -56,16 +56,17 @@ window.PROJECTS = [
   {
     "id": "investment-claims",
     "title": "Investment Claims Researcher",
-    "description": "Ingests Instagram videos about stocks and markets, extracts claims, researches them, and flags what is accurate, omitted, obfuscated, or untrue. Evaluates the asset and tracks accounts and tickers over time — performance since first mention and each account’s track record.",
+    "description": "Paste an Instagram reel or post about stocks, extract the claims, research them, and get a clear read on what holds up — plus stock profiles and account track records over time (performance since first mention, average return by caller). Built end-to-end with Claude Code; Whisper for transcription, yt-dlp for reel ingest, yfinance for market scoring.",
     "tools": [
-      "Claude",
-      "Instagram",
-      "Web research"
+      "Claude Code",
+      "OpenAI Whisper",
+      "yt-dlp",
+      "yfinance"
     ],
     "images": [
-      "assets/claims-1.svg",
-      "assets/claims-2.svg",
-      "assets/claims-3.svg"
+      "assets/claims-1.png",
+      "assets/claims-2.png",
+      "assets/claims-3.png"
     ],
     "placeholder": false
   },
