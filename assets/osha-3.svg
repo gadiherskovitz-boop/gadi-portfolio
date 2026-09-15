@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-hidden="true">
+  <rect width="960" height="600" fill="#eef0f2"/>
+  <rect x="80" y="70" width="800" height="460" rx="14" fill="#fcfcfc" stroke="#e6e6e2" stroke-width="1"/>
+  <rect x="80" y="70" width="800" height="36" rx="14" fill="#fafafa"/>
+  <rect x="80" y="92" width="800" height="14" fill="#fafafa"/>
+  <circle cx="102" cy="88" r="5" fill="#e4e4e0"/>
+  <circle cx="120" cy="88" r="5" fill="#e4e4e0"/>
+  <circle cx="138" cy="88" r="5" fill="#e4e4e0"/>
+  <text x="160" y="94" font-family="system-ui,sans-serif" font-size="13" fill="#8a8a86">Enrichment · Slack + CRM</text>
+  <rect x="110" y="180" width="120" height="80" rx="12" fill="#fff" stroke="#ecece8"/>
+  <rect x="130" y="212" width="80" height="10" rx="4" fill="#d2d2cc"/>
+  <line x1="230" y1="220" x2="260" y2="220" stroke="#c8c8c2" stroke-width="2"/>
+  <polygon points="260,220 252,214 252,226" fill="#c8c8c2"/>
+  <rect x="260" y="180" width="120" height="80" rx="12" fill="#fff" stroke="#ecece8"/>
+  <rect x="280" y="212" width="80" height="10" rx="4" fill="#d2d2cc"/>
+  <line x1="380" y1="220" x2="410" y2="220" stroke="#c8c8c2" stroke-width="2"/>
+  <polygon points="410,220 402,214 402,226" fill="#c8c8c2"/>
+  <rect x="410" y="180" width="120" height="80" rx="12" fill="#fff" stroke="#ecece8"/>
+  <rect x="430" y="212" width="80" height="10" rx="4" fill="#d2d2cc"/>
+  <line x1="530" y1="220" x2="560" y2="220" stroke="#c8c8c2" stroke-width="2"/>
+  <polygon points="560,220 552,214 552,226" fill="#c8c8c2"/>
+  <rect x="560" y="180" width="120" height="80" rx="12" fill="#fff" stroke="#ecece8"/>
+  <rect x="580" y="212" width="80" height="10" rx="4" fill="#d2d2cc"/>
+  <line x1="680" y1="220" x2="710" y2="220" stroke="#c8c8c2" stroke-width="2"/>
+  <polygon points="710,220 702,214 702,226" fill="#c8c8c2"/>
+  <rect x="710" y="180" width="120" height="80" rx="12" fill="#fff" stroke="#ecece8"/>
+  <rect x="730" y="212" width="80" height="10" rx="4" fill="#d2d2cc"/>
+  <rect x="110" y="300" width="740" height="188" rx="12" fill="#f4f4f1"/>
+  <text x="134" y="336" font-family="system-ui,sans-serif" font-size="12" fill="#8a8a86">Account note · contacts queued</text>
+<rect x="134" y="360" width="500" height="8" rx="4" fill="#d0d0ca"/>
+<rect x="134" y="384" width="420" height="8" rx="4" fill="#d0d0ca"/>
+<rect x="134" y="408" width="460" height="8" rx="4" fill="#d0d0ca"/>
+<rect x="134" y="432" width="380" height="8" rx="4" fill="#d0d0ca"/></svg>
