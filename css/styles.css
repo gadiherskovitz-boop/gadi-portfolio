@@ -121,6 +121,8 @@ a {
 }
 
 .lede {
+  margin-top: 0;
+
   color: var(--text) !important;
   font-size: 1.5rem;
   line-height: 1.45;
