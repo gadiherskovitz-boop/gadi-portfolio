@@ -19,11 +19,11 @@
   {
     "id": "deal-forecast",
     "title": "Deal Forecast Predictor",
-    "description": "Scores pipeline deals and predicts closed-won probability from qualitative and quantitative signals — not just stage and salesperson vibes. Learns what winning deals share, scans Gong transcripts against a question set, scores confidence, and surfaces gaps and risk. Improves with scale and history.",
+    "description": "A conceptual Base44 prototype for scoring pipeline deals and predicting closed-won probability from qualitative and quantitative signals — beyond stage and salesperson vibes. The idea was to learn what winning deals share, scan Gong call transcripts against a question set, score confidence, and surface gaps and risk, with HubSpot as the CRM source of truth. Gong and CRM connections were part of the design; the working build focused on the product concept in Base44.",
     "tools": [
-      "Gong",
-      "Claude",
-      "CRM"
+      "Base44",
+      "HubSpot",
+      "Gong"
     ],
     "images": [
       "assets/forecast-1.svg",
