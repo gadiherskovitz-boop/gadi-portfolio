@@ -273,7 +273,7 @@
       firstPass.appendChild(el("span", "tools-label", { text: "First pass" }));
       var tagsAlt = el("ul", "tags");
       project.toolsFirstPass.forEach(function (tool) {
-        tagsAlt.appendChild(renderToolTag(tool, true));
+        tagsAlt.appendChild(renderToolTag(tool, false));
       });
       firstPass.appendChild(tagsAlt);
       toolsWrap.appendChild(firstPass);
