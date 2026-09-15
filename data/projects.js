@@ -126,7 +126,7 @@ window.PROJECTS = [
   {
     "id": "gmail-assistant",
     "title": "Gmail Assistant",
-    "description": "Important mail gets buried under noise, and junk is either ignored forever or deleted too fast. This Gmail assistant reviews incoming email daily, files it into categories, keeps action items visible in the inbox, holds junk for a seven-day review before Trash, and emails me a 7am brief of the last 24 hours — actions, deadlines, and what was filed or removed.",
+    "description": "I missed an important email because it was buried under noise — and I wanted to make sure that never happened again. This Gmail assistant reviews incoming email daily, files it into categories, keeps action items visible in the inbox, holds junk for a seven-day review before Trash, and emails me a 7am brief of the last 24 hours — actions, deadlines, and what was filed or removed.",
     "tools": [
       "Codex",
       "GitHub"
