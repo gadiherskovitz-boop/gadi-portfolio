@@ -131,7 +131,7 @@
   {
     "id": "this-portfolio",
     "title": "This Portfolio",
-    "description": "This website — an end-to-end personal portfolio built with Grok Bot for job applications: structure, content, project cards, and free GitHub Pages hosting, shipped as a clean static site.",
+    "description": "This website was built end-to-end with Grok Bot. One prompt got me 95% of the way there. Last 5% was just providing the images, tools per project and minor amendments.",
     "tools": [
       "Grok Bot",
       "GitHub"

@@ -166,9 +166,9 @@
     "Claude": { color: "#D97757", icon: "anthropic", local: "assets/icons/anthropic.svg", letter: "C" },
     "Railway": { color: "#0B0D0E", icon: "railway", local: "assets/icons/railway.svg", letter: "R" },
     "HubSpot": { color: "#FF7A59", icon: "hubspot", local: "assets/icons/hubspot.svg", letter: "H" },
-    "Cognism": { color: "#5B4DFF", icon: null, letter: "C" },
-    "Base44": { color: "#3B82F6", icon: null, letter: "B" },
-    "Gong": { color: "#DE35FF", icon: null, letter: "G" },
+    "Cognism": { color: "#6B4EFF", icon: null, local: "assets/icons/cognism.svg", letter: "C", precolored: true },
+    "Base44": { color: "#FF631F", icon: null, local: "assets/icons/base44.svg", letter: "B", precolored: true },
+    "Gong": { color: "#7C3AED", icon: null, local: "assets/icons/gong.svg", letter: "G", precolored: true },
     "Lovable": { color: "#FF6B8A", icon: null, letter: "L" },
     "Vercel": { color: "#000000", icon: "vercel", local: "assets/icons/vercel.svg", letter: "V" },
     "Supabase": { color: "#3ECF8E", icon: "supabase", local: "assets/icons/supabase.svg", letter: "S" },
@@ -177,7 +177,7 @@
     "Slack": { color: "#4A154B", icon: "slack", local: "assets/icons/slack.svg", letter: "S" },
     "Make": { color: "#6D00CC", icon: "make", local: "assets/icons/make.svg", letter: "M" },
     "Postman": { color: "#FF6C37", icon: "postman", local: "assets/icons/postman.svg", letter: "P" },
-    "Clay": { color: "#0EC5B0", icon: null, local: "assets/icons/clay.svg", letter: "C" },
+    "Clay": { color: "#0EC5B0", icon: null, local: "assets/icons/clay.svg", letter: "C", precolored: true },
     "CRM": { color: "#64748B", icon: null, letter: "C" },
     "HTML/CSS/JS": { color: "#E34F26", icon: "html5", letter: "H" },
     "Automation": { color: "#0EA5E9", icon: null, letter: "A" },
@@ -231,10 +231,9 @@
 
     var iconSrc = brand.local || (brand.icon ? ("https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/" + brand.icon + ".svg") : null);
     if (iconSrc && !muted) {
-      if (brand.local && /\.svg$/i.test(brand.local) && brand.local.indexOf("clay.svg") !== -1) {
-        // Pre-colored Clay mark
+      if (brand.precolored) {
         var img = document.createElement("img");
-        img.src = brand.local;
+        img.src = iconSrc;
         img.alt = "";
         img.width = 14;
         img.height = 14;
