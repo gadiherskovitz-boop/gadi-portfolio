@@ -130,16 +130,14 @@ window.PROJECTS = [
   },
   {
     "id": "this-portfolio",
-    "title": "This Portfolio (Grok Bot)",
-    "description": "This website — an end-to-end personal portfolio built with Grok Bot for job applications: structure, content, mockups, and deployment wiring, shipped as a clean static site.",
+    "title": "This Portfolio",
+    "description": "This website — an end-to-end personal portfolio built with Grok Bot for job applications: structure, content, project cards, and free GitHub Pages hosting, shipped as a clean static site.",
     "tools": [
       "Grok Bot",
-      "GitHub",
-      "HTML/CSS/JS"
+      "GitHub"
     ],
     "images": [
-      "assets/portfolio-1.svg",
-      "assets/portfolio-2.svg"
+      "assets/portfolio-1.png"
     ],
     "placeholder": false
   }
