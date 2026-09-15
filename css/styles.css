@@ -228,6 +228,33 @@ a {
   border-radius: 999px;
 }
 
+.tools-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.tools-first-pass {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.55rem;
+}
+
+.tools-label {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.tags-muted li {
+  background: transparent;
+  color: var(--faint);
+  border: 1px solid var(--line);
+}
+
 /* Carousel */
 .carousel {
   position: relative;

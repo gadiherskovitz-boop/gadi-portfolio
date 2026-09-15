@@ -172,14 +172,28 @@
     titleRow.appendChild(el("h3", "", { text: project.title }));
 
     var desc = el("p", "project-desc", { text: project.description });
+
+    var toolsWrap = el("div", "tools-wrap");
     var tags = el("ul", "tags");
     (project.tools || []).forEach(function (tool) {
       tags.appendChild(el("li", "", { text: tool }));
     });
+    toolsWrap.appendChild(tags);
+
+    if (project.toolsFirstPass && project.toolsFirstPass.length) {
+      var firstPass = el("div", "tools-first-pass");
+      firstPass.appendChild(el("span", "tools-label", { text: "First pass" }));
+      var tagsAlt = el("ul", "tags tags-muted");
+      project.toolsFirstPass.forEach(function (tool) {
+        tagsAlt.appendChild(el("li", "", { text: tool }));
+      });
+      firstPass.appendChild(tagsAlt);
+      toolsWrap.appendChild(firstPass);
+    }
 
     body.appendChild(titleRow);
     body.appendChild(desc);
-    body.appendChild(tags);
+    body.appendChild(toolsWrap);
 
     article.appendChild(carouselRoot);
     article.appendChild(body);

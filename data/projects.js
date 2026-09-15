@@ -34,20 +34,24 @@ window.PROJECTS = [
     "placeholder": false
   },
   {
-    "id": "hebrew-learning",
-    "title": "Hebrew Learning App",
-    "description": "Ingests a chunk of Hebrew text and builds a word library with translations, example sentences, and audio. Smart testing plus a hub for challenging words, tense, numbers, and more — so practice stays tied to real material.",
+    "id": "ben-yehuda",
+    "title": "Ben Yehuda",
+    "description": "Hebrew practice app: paste real text, build a word library with translations and audio, then drill with smart testing and on-demand passages. First pass was Claude Code + Vercel + Supabase; I used Claude to write a Lovable prompt and rebuilt it there — Lovable is the version I doubled down on.",
     "tools": [
-      "Claude",
-      "TTS",
-      "Web app"
+      "Lovable"
     ],
     "images": [
-      "assets/hebrew-1.svg",
-      "assets/hebrew-2.svg",
-      "assets/hebrew-3.svg"
+      "assets/hebrew-1.png",
+      "assets/hebrew-2.png",
+      "assets/hebrew-3.png",
+      "assets/hebrew-4.png"
     ],
-    "placeholder": false
+    "placeholder": false,
+    "toolsFirstPass": [
+      "Claude Code",
+      "Vercel",
+      "Supabase"
+    ]
   },
   {
     "id": "investment-claims",
