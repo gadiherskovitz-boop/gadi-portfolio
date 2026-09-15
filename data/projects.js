@@ -41,8 +41,8 @@ window.PROJECTS = [
       "Lovable"
     ],
     "images": [
-      "assets/hebrew-1.png",
       "assets/hebrew-2.png",
+      "assets/hebrew-1.png",
       "assets/hebrew-3.png",
       "assets/hebrew-4.png"
     ],
@@ -82,8 +82,8 @@ window.PROJECTS = [
       "Postman"
     ],
     "images": [
-      "assets/booth-1.png",
-      "assets/booth-2.png"
+      "assets/booth-2.png",
+      "assets/booth-1.png"
     ],
     "placeholder": false
   },
