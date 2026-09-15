@@ -11,7 +11,7 @@
   --tag-text: #4a4a4a;
   --radius: 14px;
   --max: 40rem;
-  --wide: 72rem;
+  --wide: 75rem;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.04);
   --focus: #1a1a1a;
 }
@@ -152,14 +152,14 @@ a {
   gap: 1.75rem;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 640px) {
   .project-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.5rem 1.25rem;
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 980px) {
   .project-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
