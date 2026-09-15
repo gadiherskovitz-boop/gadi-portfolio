@@ -2,7 +2,7 @@ window.PROJECTS = [
   {
     "id": "beacon",
     "title": "Beacon",
-    "description": "Sales-trigger system that monitors supply-chain and Magecart cyber attacks in the news, then turns each incident into outreach. Surfaces relevant accounts, drafts email sequences and cold-call scripts, and was built so HubSpot and Cognism could plug in for CRM updates and contact discovery — the integrations were scaffolded but not fully wired up in the end. Shipped with Claude Code and Railway.",
+    "description": "When a cyber incident hits the news, the window to start a relevant sales conversation closes fast — and most teams miss it. Beacon monitors supply-chain and Magecart attacks, then turns each incident into outreach: ICP account lists, email sequences, and cold-call scripts. Built for a company sales motion, with HubSpot and Cognism scaffolded for CRM updates and contact discovery (not fully wired in the end). Shipped with Claude Code and Railway.",
     "tools": [
       "Claude Code",
       "Railway",
@@ -19,7 +19,7 @@ window.PROJECTS = [
   {
     "id": "deal-forecast",
     "title": "Deal Forecast Predictor",
-    "description": "A conceptual Base44 prototype for scoring pipeline deals and predicting closed-won probability from qualitative and quantitative signals, rather than just CRM stage and salesperson's vibes. The idea was to learn what winning deals share, scan Gong call transcripts against a question set, score confidence, and surface gaps and risk, with HubSpot as the CRM source of truth. Gong and CRM connections were part of the design; the working build focused on the product concept in Base44.",
+    "description": "Pipeline forecasts often rest on CRM stage and salesperson vibes, which hides real risk until it's late. This Base44 prototype scores deals from qualitative and quantitative signals — learning what winning deals share, scanning Gong-style call evidence against a question set, and surfacing gaps — with HubSpot as the intended CRM source of truth. Gong and CRM connections were part of the design; the working build focused on the product concept in Base44.",
     "tools": [
       "Base44",
       "HubSpot",
@@ -36,7 +36,7 @@ window.PROJECTS = [
   {
     "id": "ben-yehuda",
     "title": "Ben Yehuda",
-    "description": "Hebrew practice app: paste real text, build a word library with translations and audio, then drill with smart testing and on-demand passages. First pass was Claude Code + Vercel + Supabase; I used Claude to write a Lovable prompt and rebuilt it there — Lovable is the version I doubled down on.",
+    "description": "After making aliyah, I needed Hebrew practice that stuck to real language — not random flashcard decks. Ben Yehuda lets me paste real text, build a word library with translations and audio, then drill with smart testing and on-demand passages. First pass was Claude Code + Vercel + Supabase; I used Claude to write a Lovable prompt and rebuilt it there — Lovable is the version I doubled down on.",
     "tools": [
       "Lovable"
     ],
@@ -56,7 +56,7 @@ window.PROJECTS = [
   {
     "id": "investment-claims",
     "title": "Investment Claims Researcher",
-    "description": "Paste an Instagram reel or post about stocks, extract the claims, research them, and get a clear read on what holds up — plus stock profiles and account track records over time (performance since first mention, average return by caller). Built end-to-end with Claude Code; Whisper for transcription, yt-dlp for reel ingest, yfinance for market scoring.",
+    "description": "Instagram finance posts move markets in people's heads, but the claims are hard to check and easy to forget. This tool pastes a reel or post, extracts the claims, researches them, and scores what holds up — plus stock profiles and account track records over time. Built end-to-end with Claude Code; Whisper for transcription, yt-dlp for reel ingest, yfinance for market scoring.",
     "tools": [
       "Claude Code",
       "OpenAI Whisper",
@@ -73,7 +73,7 @@ window.PROJECTS = [
   {
     "id": "booth-visitor",
     "title": "Conference Booth Workflow",
-    "description": "Badge scan at the booth triggers a full handoff: capture the visitor, categorize the company, post a Slack alert with a one-sentence recommended action, update HubSpot, and route the contact into the right follow-up path. Orchestrated in Make; built and iterated with Claude Code and Postman.",
+    "description": "At a conference booth, badge scans pile up — but reps rarely get instant context on who just walked up or what to do next. This GTM engineering experiment turns a scan into a full handoff: capture the visitor, categorize the company, Slack a one-sentence recommended action, update HubSpot, and route follow-up. Orchestrated in Make; built and iterated with Claude Code and Postman.",
     "tools": [
       "Claude Code",
       "Make",
@@ -90,7 +90,7 @@ window.PROJECTS = [
   {
     "id": "osha-trigger",
     "title": "OSHA Sales Trigger",
-    "description": "Certain OSHA inspections and violations kick off a sales workflow: clean company names, score into tiers, pull history, Slack a dedicated channel, enrich company and contacts in Clay, update HubSpot with account notes and tasks, and route follow-up by tier. Built with Claude Code.",
+    "description": "Public OSHA filings can signal real buying moments, but they don't show up in a sales workflow on their own. This GTM practice system watches inspections and violations, cleans company names, tiers accounts, Slack-alerts the team, enriches in Clay, and updates HubSpot with notes and tasks by tier. Built with Claude Code.",
     "tools": [
       "HubSpot",
       "Slack",
@@ -106,7 +106,7 @@ window.PROJECTS = [
   {
     "id": "if-i-was-mayor",
     "title": "If I Was Mayor",
-    "description": "A multilingual civic community where Israeli residents share and rank ideas for improving their cities, and report local infrastructure problems — so local priorities surface from the people who live there.",
+    "description": "Residents see what should change in their city every day, but there's rarely a simple place to share ideas, rank them, or report broken infrastructure. If I Was Mayor is a multilingual civic community for Israeli cities — share and rank local ideas, report issues, and surface priorities from the people who live there.",
     "tools": [
       "Codex",
       "ChatGPT Sites"
@@ -119,7 +119,7 @@ window.PROJECTS = [
   {
     "id": "gmail-assistant",
     "title": "Gmail Assistant",
-    "description": "A straightforward Gmail assistant that reviews incoming emails daily, organizes them into categories, and keeps messages requiring action visible in my inbox. It sets junk aside for a seven-day review before moving it to Trash and clears. Each day at 7am, it emails me a brief summarizing the past 24 hours of non-junk mail, highlighting actions and deadlines, and reporting what was filed or removed.",
+    "description": "Important mail gets buried under noise, and junk is either ignored forever or deleted too fast. This Gmail assistant reviews incoming email daily, files it into categories, keeps action items visible in the inbox, holds junk for a seven-day review before Trash, and emails me a 7am brief of the last 24 hours — actions, deadlines, and what was filed or removed.",
     "tools": [
       "Codex"
     ],
@@ -131,7 +131,7 @@ window.PROJECTS = [
   {
     "id": "this-portfolio",
     "title": "This Portfolio",
-    "description": "This website was built end-to-end with Grok Bot. One prompt got me 95% of the way there. Last 5% was just providing the images, tools per project and minor amendments.",
+    "description": "I needed one clean place to show what I've built for job applications — without buying a domain or spending weeks on the site itself. This website was built end-to-end with Grok Bot. One prompt got me 95% of the way there. Last 5% was just providing the images, tools per project and minor amendments.",
     "tools": [
       "Grok Bot",
       "GitHub"
