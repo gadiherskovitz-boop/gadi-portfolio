@@ -108,13 +108,11 @@
     "title": "If I Was Mayor",
     "description": "A multilingual civic community where Israeli residents share and rank ideas for improving their cities, and report local infrastructure problems — so local priorities surface from the people who live there.",
     "tools": [
-      "Lovable",
-      "Web app"
+      "Codex",
+      "ChatGPT Sites"
     ],
     "images": [
-      "assets/mayor-1.svg",
-      "assets/mayor-2.svg",
-      "assets/mayor-3.svg"
+      "assets/mayor-1.png"
     ],
     "placeholder": false
   },
