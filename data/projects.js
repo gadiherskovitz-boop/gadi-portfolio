@@ -26,9 +26,10 @@ window.PORTFOLIO_PROJECTS = [
       "Gong"
     ],
     "images": [
-      "assets/forecast-1.svg",
-      "assets/forecast-2.svg",
-      "assets/forecast-3.svg"
+      "assets/forecast-1.png",
+      "assets/forecast-2.png",
+      "assets/forecast-3.png",
+      "assets/forecast-4.png"
     ],
     "placeholder": false
   },
