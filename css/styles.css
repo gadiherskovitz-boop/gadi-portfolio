@@ -120,6 +120,21 @@ a {
   margin-bottom: 0;
 }
 
+.about-reasons {
+  margin: 0 0 1.15rem;
+  padding-left: 1.25rem;
+  color: var(--muted);
+}
+
+.about-reasons li {
+  margin: 0 0 0.65rem;
+  padding-left: 0.25rem;
+}
+
+.about-reasons li:last-child {
+  margin-bottom: 0;
+}
+
 .lede {
   margin-top: 0;
 

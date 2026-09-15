@@ -7,7 +7,8 @@
       "Claude Code",
       "Railway",
       "HubSpot",
-      "Cognism"
+      "Cognism",
+      "GitHub"
     ],
     "images": [
       "assets/beacon-1.png",
@@ -23,7 +24,8 @@
     "tools": [
       "Base44",
       "HubSpot",
-      "Gong"
+      "Gong",
+      "GitHub"
     ],
     "images": [
       "assets/forecast-1.png",
@@ -38,7 +40,8 @@
     "title": "Ben Yehuda",
     "description": "After making aliyah, I needed Hebrew practice that stuck to real language — not random flashcard decks. Ben Yehuda lets me paste real text, build a word library with translations and audio, then drill with smart testing and on-demand passages. First pass was Claude Code + Vercel + Supabase; I used Claude to write a Lovable prompt and rebuilt it there — Lovable is the version I doubled down on.",
     "tools": [
-      "Lovable"
+      "Lovable",
+      "GitHub"
     ],
     "images": [
       "assets/hebrew-2.png",
@@ -61,7 +64,8 @@
       "Claude Code",
       "OpenAI Whisper",
       "yt-dlp",
-      "yfinance"
+      "yfinance",
+      "GitHub"
     ],
     "images": [
       "assets/claims-1.png",
@@ -79,7 +83,8 @@
       "Make",
       "Slack",
       "HubSpot",
-      "Postman"
+      "Postman",
+      "GitHub"
     ],
     "images": [
       "assets/booth-2.png",
@@ -95,7 +100,8 @@
       "HubSpot",
       "Slack",
       "Clay",
-      "Claude Code"
+      "Claude Code",
+      "GitHub"
     ],
     "images": [
       "assets/osha-1.png",
@@ -109,7 +115,8 @@
     "description": "Residents see what should change in their city every day, but there's rarely a simple place to share ideas, rank them, or report broken infrastructure. If I Was Mayor is a multilingual civic community for Israeli cities — share and rank local ideas, report issues, and surface priorities from the people who live there.",
     "tools": [
       "Codex",
-      "ChatGPT Sites"
+      "ChatGPT Sites",
+      "GitHub"
     ],
     "images": [
       "assets/mayor-1.png"
@@ -121,7 +128,8 @@
     "title": "Gmail Assistant",
     "description": "Important mail gets buried under noise, and junk is either ignored forever or deleted too fast. This Gmail assistant reviews incoming email daily, files it into categories, keeps action items visible in the inbox, holds junk for a seven-day review before Trash, and emails me a 7am brief of the last 24 hours — actions, deadlines, and what was filed or removed.",
     "tools": [
-      "Codex"
+      "Codex",
+      "GitHub"
     ],
     "images": [
       "assets/gmail-assistant-1.png"
