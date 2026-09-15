@@ -2,7 +2,7 @@
   {
     "id": "beacon",
     "title": "Beacon",
-    "description": "Sales-trigger system that monitors supply-chain and Magecart cyber attacks in the news, then turns each incident into outreach. Builds ICP company and contact lists that may care about the breach, and drafts email sequences and cold-call scripts while the story is still hot.",
+    "description": "Sales-trigger system that monitors supply-chain and Magecart cyber attacks in the news, then turns each incident into outreach. Surfaces relevant accounts, drafts email sequences and cold-call scripts, and was built so HubSpot and Cognism could plug in for CRM updates and contact discovery — the integrations were scaffolded but not fully wired up in the end. Shipped with Claude Code and Railway.",
     "tools": [
       "Claude Code",
       "Railway",
