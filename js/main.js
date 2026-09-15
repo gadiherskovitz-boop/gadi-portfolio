@@ -189,6 +189,7 @@
     "TTS": { color: "#8B5CF6", icon: null, letter: "T" },
     "OpenAI": { color: "#10A37F", icon: "openai", local: "assets/icons/openai.svg", letter: "O" },
     "OpenAI Whisper": { color: "#10A37F", icon: "openai", local: "assets/icons/openai.svg", letter: "W" },
+    "Codex": { color: "#10A37F", icon: "openai", local: "assets/icons/openai.svg", letter: "C" },
     "yt-dlp": { color: "#FF0000", icon: null, letter: "Y" },
     "yfinance": { color: "#6001D2", icon: null, letter: "Y" },
     "Cursor": { color: "#000000", icon: null, letter: "C" },

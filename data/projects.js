@@ -119,6 +119,18 @@ window.PROJECTS = [
     "placeholder": false
   },
   {
+    "id": "gmail-assistant",
+    "title": "Gmail Assistant",
+    "description": "A straightforward Gmail assistant that reviews incoming emails daily, organizes them into categories, and keeps messages requiring action visible in my inbox. It sets junk aside for a seven-day review before moving it to Trash and clears. Each day at 7am, it emails me a brief summarizing the past 24 hours of non-junk mail, highlighting actions and deadlines, and reporting what was filed or removed.",
+    "tools": [
+      "Codex"
+    ],
+    "images": [
+      "assets/gmail-assistant-1.png"
+    ],
+    "placeholder": false
+  },
+  {
     "id": "this-portfolio",
     "title": "This Portfolio (Grok Bot)",
     "description": "This website — an end-to-end personal portfolio built with Grok Bot for job applications: structure, content, mockups, and deployment wiring, shipped as a clean static site.",
