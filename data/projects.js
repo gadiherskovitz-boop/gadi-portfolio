@@ -90,17 +90,16 @@ window.PROJECTS = [
   {
     "id": "osha-trigger",
     "title": "OSHA Sales Trigger",
-    "description": "Certain OSHA inspections and violations kick off a full sales workflow: clean company names, score into tier 1/2/3 or irrelevant, pull OSHA history, Slack a dedicated channel, enrich company and contacts in Clay, write a CRM account note, and assign sequences or tasks by tier.",
+    "description": "Certain OSHA inspections and violations kick off a sales workflow: clean company names, score into tiers, pull history, Slack a dedicated channel, enrich company and contacts in Clay, update HubSpot with account notes and tasks, and route follow-up by tier. Built with Claude Code.",
     "tools": [
-      "OSHA data",
-      "Clay",
+      "HubSpot",
       "Slack",
-      "CRM"
+      "Clay",
+      "Claude Code"
     ],
     "images": [
-      "assets/osha-1.svg",
-      "assets/osha-2.svg",
-      "assets/osha-3.svg"
+      "assets/osha-1.png",
+      "assets/osha-2.png"
     ],
     "placeholder": false
   },
