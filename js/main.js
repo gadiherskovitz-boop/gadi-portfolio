@@ -188,7 +188,7 @@
 
   function init() {
     var list = document.getElementById("project-list");
-    var projects = window.PROJECTS || [];
+    var projects = window.PROJECTS || window.PORTFOLIO_PROJECTS || [];
     if (!list) return;
     if (!projects.length) {
       list.textContent = "No projects yet.";

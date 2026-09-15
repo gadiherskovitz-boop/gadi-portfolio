@@ -1,4 +1,4 @@
-window.PORTFOLIO_PROJECTS = [
+window.PROJECTS = [
   {
     "id": "beacon",
     "title": "Beacon",
@@ -130,3 +130,4 @@ window.PORTFOLIO_PROJECTS = [
     "placeholder": false
   }
 ];
+window.PORTFOLIO_PROJECTS = window.PROJECTS;
