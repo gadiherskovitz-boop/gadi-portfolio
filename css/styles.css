@@ -11,7 +11,7 @@
   --tag-text: #4a4a4a;
   --radius: 14px;
   --max: 40rem;
-  --wide: 46rem;
+  --wide: 72rem;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.04);
   --focus: #1a1a1a;
 }
@@ -147,9 +147,22 @@ a {
 }
 
 .project-list {
-  display: flex;
-  flex-direction: column;
-  gap: 4.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+@media (min-width: 720px) {
+  .project-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem 1.25rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .project-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 .project {
@@ -173,7 +186,7 @@ a {
 
 .project h3 {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 600;
   letter-spacing: -0.02em;
 }
@@ -192,7 +205,8 @@ a {
 .project-desc {
   margin: 0 0 1.1rem;
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.55;
 }
 
 .tags {
@@ -347,7 +361,7 @@ a {
   .about { padding: 2.5rem 1.25rem 3.5rem; }
   .projects { padding: 0 1.25rem 4.5rem; }
   .project-body { padding: 1.25rem; }
-  .project-list { gap: 2.75rem; }
+  .project-list { gap: 1.25rem; }
 }
 
 @media (min-width: 880px) {
