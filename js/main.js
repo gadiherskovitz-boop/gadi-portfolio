@@ -175,6 +175,8 @@
     "GitHub": { color: "#181717", icon: "github", letter: "G" },
     "Grok Bot": { color: "#1A1A1A", icon: null, letter: "G" },
     "Slack": { color: "#4A154B", icon: "slack", letter: "S" },
+    "Make": { color: "#6D00CC", icon: "make", letter: "M" },
+    "Postman": { color: "#FF6C37", icon: "postman", letter: "P" },
     "Clay": { color: "#E8A317", icon: null, letter: "C" },
     "CRM": { color: "#64748B", icon: null, letter: "C" },
     "HTML/CSS/JS": { color: "#E34F26", icon: "html5", letter: "H" },

@@ -73,17 +73,17 @@
   {
     "id": "booth-visitor",
     "title": "Conference Booth Workflow",
-    "description": "A badge scan at the booth captures visitor details, categorizes the company, posts a Slack message with a one-sentence recommended action, updates the CRM, and uploads the contact into the right sequence by category.",
+    "description": "Badge scan at the booth triggers a full handoff: capture the visitor, categorize the company, post a Slack alert with a one-sentence recommended action, update HubSpot, and route the contact into the right follow-up path. Orchestrated in Make; built and iterated with Claude Code and Postman.",
     "tools": [
+      "Claude Code",
+      "Make",
       "Slack",
-      "CRM",
-      "Clay",
-      "Automation"
+      "HubSpot",
+      "Postman"
     ],
     "images": [
-      "assets/booth-1.svg",
-      "assets/booth-2.svg",
-      "assets/booth-3.svg"
+      "assets/booth-1.png",
+      "assets/booth-2.png"
     ],
     "placeholder": false
   },
