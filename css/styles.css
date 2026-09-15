@@ -261,9 +261,22 @@ a {
 }
 
 .tool-mark img {
-  width: 0.7rem;
-  height: 0.7rem;
+  width: 0.85rem;
+  height: 0.85rem;
   display: block;
+}
+
+.tool-mark-icon {
+  display: block;
+  width: 0.72rem;
+  height: 0.72rem;
+  background-color: var(--tool-color);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
 }
 
 .tool-mark-letter {

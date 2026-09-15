@@ -162,22 +162,22 @@
 
 
   var TOOL_BRANDS = {
-    "Claude Code": { color: "#D97757", icon: "anthropic", letter: "C" },
-    "Claude": { color: "#D97757", icon: "anthropic", letter: "C" },
-    "Railway": { color: "#0B0D0E", icon: "railway", letter: "R" },
-    "HubSpot": { color: "#FF7A59", icon: "hubspot", letter: "H" },
+    "Claude Code": { color: "#D97757", icon: "anthropic", local: "assets/icons/anthropic.svg", letter: "C" },
+    "Claude": { color: "#D97757", icon: "anthropic", local: "assets/icons/anthropic.svg", letter: "C" },
+    "Railway": { color: "#0B0D0E", icon: "railway", local: "assets/icons/railway.svg", letter: "R" },
+    "HubSpot": { color: "#FF7A59", icon: "hubspot", local: "assets/icons/hubspot.svg", letter: "H" },
     "Cognism": { color: "#5B4DFF", icon: null, letter: "C" },
     "Base44": { color: "#3B82F6", icon: null, letter: "B" },
     "Gong": { color: "#DE35FF", icon: null, letter: "G" },
     "Lovable": { color: "#FF6B8A", icon: null, letter: "L" },
-    "Vercel": { color: "#000000", icon: "vercel", letter: "V" },
-    "Supabase": { color: "#3ECF8E", icon: "supabase", letter: "S" },
-    "GitHub": { color: "#181717", icon: "github", letter: "G" },
+    "Vercel": { color: "#000000", icon: "vercel", local: "assets/icons/vercel.svg", letter: "V" },
+    "Supabase": { color: "#3ECF8E", icon: "supabase", local: "assets/icons/supabase.svg", letter: "S" },
+    "GitHub": { color: "#181717", icon: "github", local: "assets/icons/github.svg", letter: "G" },
     "Grok Bot": { color: "#1A1A1A", icon: null, letter: "G" },
-    "Slack": { color: "#4A154B", icon: "slack", letter: "S" },
-    "Make": { color: "#6D00CC", icon: "make", letter: "M" },
-    "Postman": { color: "#FF6C37", icon: "postman", letter: "P" },
-    "Clay": { color: "#E8A317", icon: null, letter: "C" },
+    "Slack": { color: "#4A154B", icon: "slack", local: "assets/icons/slack.svg", letter: "S" },
+    "Make": { color: "#6D00CC", icon: "make", local: "assets/icons/make.svg", letter: "M" },
+    "Postman": { color: "#FF6C37", icon: "postman", local: "assets/icons/postman.svg", letter: "P" },
+    "Clay": { color: "#0EC5B0", icon: null, local: "assets/icons/clay.svg", letter: "C" },
     "CRM": { color: "#64748B", icon: null, letter: "C" },
     "HTML/CSS/JS": { color: "#E34F26", icon: "html5", letter: "H" },
     "Automation": { color: "#0EA5E9", icon: null, letter: "A" },
@@ -187,8 +187,8 @@
     "Web research": { color: "#0284C7", icon: null, letter: "W" },
     "Instagram": { color: "#E4405F", icon: "instagram", letter: "I" },
     "TTS": { color: "#8B5CF6", icon: null, letter: "T" },
-    "OpenAI": { color: "#10A37F", icon: "openai", letter: "O" },
-    "OpenAI Whisper": { color: "#10A37F", icon: "openai", letter: "W" },
+    "OpenAI": { color: "#10A37F", icon: "openai", local: "assets/icons/openai.svg", letter: "O" },
+    "OpenAI Whisper": { color: "#10A37F", icon: "openai", local: "assets/icons/openai.svg", letter: "W" },
     "yt-dlp": { color: "#FF0000", icon: null, letter: "Y" },
     "yfinance": { color: "#6001D2", icon: null, letter: "Y" },
     "Cursor": { color: "#000000", icon: null, letter: "C" },
@@ -226,19 +226,25 @@
 
     var mark = document.createElement("span");
     mark.className = "tool-mark";
-    if (brand.icon && !muted) {
-      var img = document.createElement("img");
-      img.src = "https://cdn.simpleicons.org/" + brand.icon + "/" + brand.color.replace("#", "");
-      img.alt = "";
-      img.width = 12;
-      img.height = 12;
-      img.loading = "lazy";
-      img.referrerPolicy = "no-referrer";
-      img.onerror = function () {
-        mark.textContent = brand.letter;
-        mark.classList.add("tool-mark-letter");
-      };
-      mark.appendChild(img);
+
+    var iconSrc = brand.local || (brand.icon ? ("https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/" + brand.icon + ".svg") : null);
+    if (iconSrc && !muted) {
+      if (brand.local && /\.svg$/i.test(brand.local) && brand.local.indexOf("clay.svg") !== -1) {
+        // Pre-colored Clay mark
+        var img = document.createElement("img");
+        img.src = brand.local;
+        img.alt = "";
+        img.width = 14;
+        img.height = 14;
+        img.loading = "lazy";
+        mark.appendChild(img);
+      } else {
+        var icon = document.createElement("span");
+        icon.className = "tool-mark-icon";
+        icon.style.webkitMaskImage = "url('" + iconSrc + "')";
+        icon.style.maskImage = "url('" + iconSrc + "')";
+        mark.appendChild(icon);
+      }
     } else {
       mark.textContent = brand.letter;
       mark.classList.add("tool-mark-letter");
