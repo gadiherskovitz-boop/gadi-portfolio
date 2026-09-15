@@ -59,7 +59,7 @@ window.PROJECTS = [
   {
     "id": "investment-claims",
     "title": "Investment Claims Researcher",
-    "description": "Instagram finance posts move markets in people's heads, but the claims are hard to check and easy to forget. This tool pastes a reel or post, extracts the claims, researches them, and scores what holds up — plus stock profiles and account track records over time. Built end-to-end with Claude Code; Whisper for transcription, yt-dlp for reel ingest, yfinance for market scoring.",
+    "description": "I kept seeing Instagram accounts with interesting, compelling takes on stocks — but I didn’t have time to give each post the research depth it needed to verify and form a real point of view. I also had no easy way to see how each claim aged: was the prediction right or wrong? That would take a lot of manual work. So I built a platform that pastes a reel or post, extracts the claims, researches them, and tracks what holds up over time — stock profiles and account track records included. Built end-to-end with Claude Code; Whisper for transcription, yt-dlp for reel ingest, yfinance for market scoring.",
     "tools": [
       "Claude Code",
       "OpenAI Whisper",
