@@ -1,18 +1,18 @@
-window.PROJECTS = [
+window.PORTFOLIO_PROJECTS = [
   {
-    "id": "cyber-hack-trigger",
-    "title": "Cyber Hack Sales Trigger",
-    "description": "Monitors supply-chain and Magecart attacks in the news, then turns each incident into a sales conversation. Builds ICP company and contact lists that may care about the breach, and drafts an email sequence plus cold-call script so outreach starts while the story is still hot.",
+    "id": "beacon",
+    "title": "Beacon",
+    "description": "Sales-trigger system that monitors supply-chain and Magecart cyber attacks in the news, then turns each incident into outreach. Builds ICP company and contact lists that may care about the breach, and drafts email sequences and cold-call scripts while the story is still hot.",
     "tools": [
-      "Claude",
-      "Web monitoring",
-      "Clay",
-      "CRM"
+      "Claude Code",
+      "Railway",
+      "HubSpot",
+      "Cognism"
     ],
     "images": [
-      "assets/cyber-1.svg",
-      "assets/cyber-2.svg",
-      "assets/cyber-3.svg"
+      "assets/beacon-1.png",
+      "assets/beacon-2.png",
+      "assets/beacon-3.png"
     ],
     "placeholder": false
   },
