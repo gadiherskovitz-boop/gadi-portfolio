@@ -20,18 +20,20 @@ window.PROJECTS = [
   {
     "id": "deal-forecast",
     "title": "Deal Forecast Predictor",
-    "description": "Pipeline forecasts often rest on CRM stage and salesperson vibes, which hides real risk until it's late. This Base44 prototype scores deals from qualitative and quantitative signals — learning what winning deals share, scanning Gong-style call evidence against a question set, and surfacing gaps — with HubSpot as the intended CRM source of truth. Gong and CRM connections were part of the design; the working build focused on the product concept in Base44.",
+    "description": "Pipeline forecasts often rest on CRM stage and salesperson vibes, which hides real risk until it's late. This Base44 prototype scores deals from qualitative and quantitative signals — learning what winning deals share, scanning Gong-style call evidence against a question set, and surfacing gaps — with HubSpot as the intended CRM source of truth. Gong and CRM connections were part of the design; the working build focused on the product concept in Base44, with an n8n workflow stitching quant and qual agents together.",
     "tools": [
       "Base44",
       "HubSpot",
       "Gong",
+      "n8n",
       "GitHub"
     ],
     "images": [
       "assets/forecast-1.png",
       "assets/forecast-2.png",
       "assets/forecast-3.png",
-      "assets/forecast-4.png"
+      "assets/forecast-4.png",
+      "assets/forecast-5.png"
     ],
     "placeholder": false
   },
