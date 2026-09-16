@@ -169,7 +169,7 @@
     "Cognism": { color: "#6B4EFF", icon: null, local: "assets/icons/cognism.svg", letter: "C", precolored: true },
     "Base44": { color: "#FF631F", icon: null, local: "assets/icons/base44.svg", letter: "B", precolored: true },
     "Gong": { color: "#7C3AED", icon: null, local: "assets/icons/gong.svg", letter: "G", precolored: true },
-    "n8n": { color: "#EA4B71", icon: "n8n", local: "assets/icons/n8n.svg", letter: "n" },
+    "n8n": { color: "#EA4B71", icon: null, local: "assets/icons/n8n.svg", letter: "n", precolored: true },
     "Lovable": { color: "#FF6B8A", icon: null, letter: "L" },
     "Vercel": { color: "#000000", icon: "vercel", local: "assets/icons/vercel.svg", letter: "V" },
     "Supabase": { color: "#3ECF8E", icon: "supabase", local: "assets/icons/supabase.svg", letter: "S" },
